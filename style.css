@@ -1,0 +1,103 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+
+    
+}
+
+.images{
+    position: relative;
+}
+.arrowleft i{
+    position: fixed;
+    top: 43%;
+    left: 10%;
+    background-color: #fff; /* Задайте нужный цвет для кнопок */
+    color: white; /* Задайте нужный цвет текста кнопок */
+    font-size: 44px; /* Задайте желаемый размер шрифта */
+    padding: 8px; /* Задайте отступы кнопок */
+    cursor: pointer;
+}
+.arrowright i{
+    position: fixed;
+    top: 44.6%;
+    background-color:#fff; /* Задайте нужный цвет для кнопок */ /* Задайте нужный цвет текста кнопок */
+    font-size: 44px; /* Задайте желаемый размер шрифта */
+    padding: 8px; /* Задайте отступы кнопок */
+    cursor: pointer;
+    left: 90%;
+    transition-duration: 3s;
+}
+.arrowright i:hover{
+    opacity: 0.3;
+    transition-duration:2s;
+}
+.arrowleft i:hover{
+    opacity: 0.3;
+    transition-duration: 2s;
+}
+.images img{
+    width: 100%;
+    height: 100%;
+   
+}
+
+
+.active{
+    display: none;
+}
+.unshowed{
+    display: none;
+}
+.arrowleft,.arrowright{
+    display: flex;
+    align-items: center;
+}
+#play{
+    cursor: pointer;
+    position: fixed;
+    bottom: 10%;
+    left: 46%;
+    border-radius: 50%;
+}
+#play img{
+border-radius: 50%;
+   
+}
+.none{
+    display: none;
+}
+#stop{
+    cursor: pointer;
+    position: fixed;
+    bottom: 10%;
+    left: 46%;
+    border-radius: 50%;
+}
+#stop img{
+    border-radius: 50%; 
+}
+/* MEDIA */
+
+@media screen and (max-width:750px){
+    .images{
+        height:100vh;
+        
+    }
+    body{
+        max-width: 800px;
+    }
+    .arrowright i{
+        position: fixed;
+        right: 40%;
+    }
+    #play{
+        transform: translateX(-40%);
+    }
+    #stop{
+        transform: translateX(-40%);
+    }
+}
